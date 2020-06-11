@@ -1,0 +1,30 @@
+{
+  "model": "unet",
+  "run": "run0",
+
+  "tile_dir": "../data/images",
+  "train_file": "../data/splits/train_files_numpy",
+  "val_file": "../data/splits/val_files_numpy",
+  "mask_dir": "../data/masks",
+  "n_train": 10,
+  "n_val": 10,
+
+  "layers": 4,
+  "label_size": 48,
+  "batch_size": 32,
+  "shuffle": true,
+  "num_workers": 4,
+  
+  "epochs": 50,
+  "starting_filters": 32,
+  "bn_momentum": 0.1,
+  "lr": 0.001,
+  "beta1": 0.5,
+  "beta2": 0.999,
+  "weight_decay": 0.0,
+  "decay_steps": 100000,
+  "gamma": 0.9,
+  "save_model": true,
+
+  "visdom_every": 100
+}
